@@ -41,7 +41,7 @@ public class ActivityMain extends CameraActivity {
 
     private static final DetectorMode MODE = DetectorMode.TF_OD_API;
 
-    private static final float MINIMUM_CONFIDENCE = 0.6f;
+    private static final float MINIMUM_CONFIDENCE = 0.8f;
     private static final boolean MAINTAIN_ASPECT = MODE == DetectorMode.YOLO;
     private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
     private static final boolean SAVE_PREVIEW_BITMAP = false;
@@ -68,20 +68,38 @@ public class ActivityMain extends CameraActivity {
     private OverlayView trackingOverlay;
     private MultiBoxTracker tracker;
 
-    private TextView displayScreen;
-    private int randNum;
+    private TextView displayScreen1;
+    private TextView displayScreen2;
+    private TextView displayScreen3;
+    private TextView displayScreen4;
+    private int randNum1;
+    private int randNum2;
+    private int randNum3;
+    private int randNum4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        displayScreen = findViewById(R.id.display_screen);
+        displayScreen1 = findViewById(R.id.display_screen1);
+        displayScreen2 = findViewById(R.id.display_screen2);
+        displayScreen3 = findViewById(R.id.display_screen3);
+        displayScreen4 = findViewById(R.id.display_screen4);
         generateNumber();
     }
 
     private void generateNumber() {
         Random r = new Random();
-        randNum = r.nextInt(10) + 1;
-        displayScreen.setText(randNum+"");
+        randNum1 = r.nextInt(10) + 1;
+        displayScreen1.setText(randNum1+"");
+
+        randNum2 = r.nextInt(10) + 1;
+        displayScreen2.setText(randNum2+"");
+
+        randNum3 = r.nextInt(10) + 1;
+        displayScreen3.setText(randNum3+"");
+
+        randNum4 = r.nextInt(10) + 1;
+        displayScreen4.setText(randNum4+"");
     }
 
     @Override
@@ -182,15 +200,46 @@ public class ActivityMain extends CameraActivity {
             }
         }
 
-        if (temp == randNum)
+        if (temp == randNum1)
         {
-            displayScreen.setText("YOU ARE RIGHT");
-            new Handler().postDelayed(new Runnable() {
+            randNum1 = 0;
+            runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    generateNumber();
+                    displayScreen1.setText("YAAY!!!");
                 }
-            },1500);
+            });
+
+        }else if (temp == randNum2)
+        {
+            randNum2 = 0;
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    displayScreen2.setText("YAAY!!!");
+                }
+            });
+
+        }else if (temp == randNum3)
+        {
+            randNum3 = 0;
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    displayScreen3.setText("YAAY!!!");
+                }
+            });
+
+        }else if (temp == randNum4)
+        {
+            randNum4 = 0;
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    displayScreen4.setText("YAAY!!!");
+                }
+            });
+
         }
     }
 

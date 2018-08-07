@@ -14,26 +14,94 @@
  limitations under the License.
 -->
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000">
 
     <TextView
-        android:id="@+id/display_screen"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/display_screen1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/display_screen2"
+        android:layout_toStartOf="@+id/display_screen2"
         android:background="#a17767a0"
         android:elevation="10dp"
         android:gravity="center"
         android:text="TEST"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/display_screen2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/display_screen3"
+        android:layout_toEndOf="@+id/display_screen3"
+        android:background="#a17767a0"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="TEST"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/display_screen1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/display_screen1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/display_screen3"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/display_screen4"
+        android:layout_toStartOf="@+id/display_screen4"
+        android:background="#a17767a0"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="TEST"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_screen1"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/display_screen4"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="50dp"
+        android:background="#a17767a0"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="TEST"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/display_screen3"
+        app:layout_constraintTop_toBottomOf="@+id/display_screen2" />
+
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000" />
-</FrameLayout>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>

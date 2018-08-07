@@ -163,6 +163,12 @@ public abstract class CameraActivity extends Activity
         if (rgbBytes == null) {
             rgbBytes = new int[previewWidth * previewHeight];
         }
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        },750);
         try {
             final Image image = reader.acquireLatestImage();
 
@@ -215,6 +221,7 @@ public abstract class CameraActivity extends Activity
             return;
         }
         Trace.endSection();
+
     }
 
     @Override
