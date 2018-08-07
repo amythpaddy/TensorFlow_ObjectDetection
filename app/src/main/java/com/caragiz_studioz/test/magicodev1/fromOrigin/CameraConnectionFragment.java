@@ -566,6 +566,11 @@ public class CameraConnectionFragment extends Fragment {
                                 previewRequestBuilder.set(
                                         CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
 
+                                /*previewRequestBuilder.set(
+                                        CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE,
+                                        CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES()
+                                );*/
+
                                 // Finally, we start displaying the camera preview.
                                 previewRequest = previewRequestBuilder.build();
                                 captureSession.setRepeatingRequest(
