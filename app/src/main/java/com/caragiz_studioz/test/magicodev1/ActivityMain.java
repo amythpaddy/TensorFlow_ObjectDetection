@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
@@ -32,8 +33,12 @@ import java.util.Random;
 public class ActivityMain extends CameraActivity {
 
     private static final int TF_OF_API_INPUT_SIZE = 300;
-    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/graph.pb";
-    private static final String TF_OD_API_LABELS = "file:///android_asset/labels.txt";
+//    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/graph.pb";
+//    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/magico17aug.pb";
+    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/one2six.pb";
+//    private static final String TF_OD_API_LABELS = "file:///android_asset/labels.txt";
+//    private static final String TF_OD_API_LABELS = "file:///android_asset/magico_labels.txt";
+    private static final String TF_OD_API_LABELS = "file:///android_asset/one2six_labels.txt";
 
     private enum DetectorMode {
         TF_OD_API, MULTIBOX, YOLO;
@@ -41,7 +46,7 @@ public class ActivityMain extends CameraActivity {
 
     private static final DetectorMode MODE = DetectorMode.TF_OD_API;
 
-    private static final float MINIMUM_CONFIDENCE = 0.8f;
+    private static final float MINIMUM_CONFIDENCE = 0.1f;
     private static final boolean MAINTAIN_ASPECT = MODE == DetectorMode.YOLO;
     private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
     private static final boolean SAVE_PREVIEW_BITMAP = false;
@@ -58,6 +63,7 @@ public class ActivityMain extends CameraActivity {
     private boolean computingDetection = false;
 
     private long timestamp = 0;
+    private int width = 0;
 
     private Matrix frameToCropTransform;
     private Matrix cropToFrameTransform;
@@ -84,6 +90,10 @@ public class ActivityMain extends CameraActivity {
         displayScreen2 = findViewById(R.id.display_screen2);
         displayScreen3 = findViewById(R.id.display_screen3);
         displayScreen4 = findViewById(R.id.display_screen4);
+
+        DisplayMetrics display = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(display);
+        width = display.widthPixels;
         generateNumber();
     }
 
@@ -160,6 +170,8 @@ public class ActivityMain extends CameraActivity {
 
                 for (final Classifier.Recognition result : results) {
                     final RectF location = result.getLocation();
+//                    location.right = width - location.right;
+//                    location.left = width - location.left;
                     if (location != null && result.getConfidence() >= minimumConfidence) {
                         canvas.drawRect(location, paint);
 
@@ -167,6 +179,9 @@ public class ActivityMain extends CameraActivity {
                         result.setLocation(location);
                         mappedRecognintions.add(result);
 
+                    }
+                    else{
+                        canvas.drawColor(Color.TRANSPARENT);
                     }
                 }
                 tracker.trackResults(mappedRecognintions, luminanceCopy, currTimestamp);
