@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Android\\Workspace\\Magico\\Dev1\\app\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+            "outputFile": "/home/smartivity/dev/android/workspace/Magico_Dev/app/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amyth_shekhar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b212ef31d4431778ce605a579d652f1a\\res\\values-fr-rCA\\values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,331,442,529,645,775,858,938,1034,1144,1256,1359,1470,1577,1679,1838,1937",
-                        "endColumns": "110,114,110,86,115,129,82,79,95,109,111,102,110,106,101,158,98,85",
-                        "endOffsets": "211,326,437,524,640,770,853,933,1029,1139,1251,1354,1465,1572,1674,1833,1932,2018"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\amyth_shekhar\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\13669d7917472bf7713c6f84ae7ef65a\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "/home/smartivity/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/597206818dbb88ef6eed89f7465705b7/res/values-fr-rCA/values-fr-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "2023",
                         "endColumns": "100",
                         "endOffsets": "2119"
+                    }
+                },
+                {
+                    "source": "/home/smartivity/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e672857d6996c5ef04abbc2e25c5380c/res/values-fr-rCA/values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,331,442,529,645,775,858,938,1034,1144,1256,1359,1470,1577,1679,1838,1937",
+                        "endColumns": "110,114,110,86,115,129,82,79,95,109,111,102,110,106,101,158,98,85",
+                        "endOffsets": "211,326,437,524,640,770,853,933,1029,1139,1251,1354,1465,1572,1674,1833,1932,2018"
                     }
                 }
             ]

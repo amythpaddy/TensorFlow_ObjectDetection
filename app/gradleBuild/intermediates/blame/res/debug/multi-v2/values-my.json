@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Android\\Workspace\\Magico\\Dev1\\app\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
+            "outputFile": "/home/smartivity/dev/android/workspace/Magico_Dev/app/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amyth_shekhar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b212ef31d4431778ce605a579d652f1a\\res\\values-my\\values-my.xml",
+                    "source": "/home/smartivity/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e672857d6996c5ef04abbc2e25c5380c/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\amyth_shekhar\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\13669d7917472bf7713c6f84ae7ef65a\\res\\values-my\\values-my.xml",
+                    "source": "/home/smartivity/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/597206818dbb88ef6eed89f7465705b7/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

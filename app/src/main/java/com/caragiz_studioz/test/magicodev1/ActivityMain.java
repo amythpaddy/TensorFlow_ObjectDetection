@@ -35,10 +35,10 @@ public class ActivityMain extends CameraActivity {
     private static final int TF_OF_API_INPUT_SIZE = 300;
 //    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/graph.pb";
 //    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/magico17aug.pb";
-    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/one2six.pb";
+    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/magico_dev.pb";
 //    private static final String TF_OD_API_LABELS = "file:///android_asset/labels.txt";
 //    private static final String TF_OD_API_LABELS = "file:///android_asset/magico_labels.txt";
-    private static final String TF_OD_API_LABELS = "file:///android_asset/one2six_labels.txt";
+    private static final String TF_OD_API_LABELS = "file:///android_asset/magico_dev_labels.txt";
 
     private enum DetectorMode {
         TF_OD_API, MULTIBOX, YOLO;

@@ -1,15 +1,63 @@
 apply plugin: 'com.android.application'
 
+// set to 'cmake' or  'none'
+def nativeBuildSystem = 'cmake'
+def cpuType = 'armeabi-v7a'
+def nativeOutDir = 'libs/'+cpuType
+
+project.ext.ASSET_DIR = projectDir.toString() + "/src/main/assets"
+project.ext.TMP_DIR = project.buildDir.toString() + "/downloads"
+
+
 android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.caragiz_studioz.test.magicodev1"
         minSdkVersion 22
         targetSdkVersion 27
+        ndk{
+            abiFilters "${cpuType}"
+        }
+        externalNativeBuild{
+            cmake{
+                arguments '-DANDROID_TOOLCHAIN=gcc', '-DANDROID_STL=gnustl_static'
+            }
+        }
+
+
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    externalNativeBuild{
+        cmake {
+            path './jni/CMakeLists.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets{
+        main {
+            java{
+                srcDir 'src'
+            }
+
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = [project.ext.ASSET_DIR]
+            jniLibs.srcDirs = ['libs']
+        }
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -27,3 +75,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'org.tensorflow:tensorflow-android:+'
 }
+
+project.buildDir = 'gradleBuild'
+getProject().setBuildDir('gradleBuild')
+
+

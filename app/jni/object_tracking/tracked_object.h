@@ -19,7 +19,7 @@ limitations under the License.
 #ifdef __RENDER_OPENGL__
 #include "tensorflow/examples/android/jni/object_tracking/gl_utils.h"
 #endif
-#include "tensorflow/examples/android/jni/object_tracking/object_detector.h"
+#include "object_detector.h"
 
 namespace tf_tracking {
 

@@ -34,6 +34,8 @@ import com.caragiz_studioz.test.magicodev1.Classifier;
 import com.caragiz_studioz.test.magicodev1.env.BorderedText;
 import com.caragiz_studioz.test.magicodev1.env.ImageUtils;
 
+import org.tensorflow.demo.tracking.ObjectTracker;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;

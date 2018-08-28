@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Android\\Workspace\\Magico\\Dev1\\app\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "outputFile": "/home/smartivity/dev/android/workspace/Magico_Dev/app/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amyth_shekhar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b212ef31d4431778ce605a579d652f1a\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "/home/smartivity/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e672857d6996c5ef04abbc2e25c5380c/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
