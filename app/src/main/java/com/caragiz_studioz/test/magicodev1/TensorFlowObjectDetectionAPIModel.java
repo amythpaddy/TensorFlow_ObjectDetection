@@ -21,7 +21,7 @@ import java.util.PriorityQueue;
 import java.util.Vector;
 
 public class TensorFlowObjectDetectionAPIModel implements Classifier {
-    private static final int MAX_RESULTS = 100;
+    private static final int MAX_RESULTS = 30;
     private String inputName;
     private int inputSize;
 

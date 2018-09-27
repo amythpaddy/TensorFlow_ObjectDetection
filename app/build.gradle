@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 // set to 'cmake' or  'none'
 def nativeBuildSystem = 'cmake'
 def cpuType = 'armeabi-v7a'
-def nativeOutDir = 'libs/'+cpuType
+def nativeOutDir = 'libs/' + cpuType
 
 project.ext.ASSET_DIR = projectDir.toString() + "/src/main/assets"
 project.ext.TMP_DIR = project.buildDir.toString() + "/downloads"
@@ -15,11 +15,11 @@ android {
         applicationId "com.caragiz_studioz.test.magicodev1"
         minSdkVersion 22
         targetSdkVersion 27
-        ndk{
+        ndk {
             abiFilters "${cpuType}"
         }
-        externalNativeBuild{
-            cmake{
+        externalNativeBuild {
+            cmake {
                 arguments '-DANDROID_TOOLCHAIN=gcc', '-DANDROID_STL=gnustl_static'
             }
         }
@@ -29,7 +29,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    externalNativeBuild{
+    externalNativeBuild {
         cmake {
             path './jni/CMakeLists.txt'
         }
@@ -39,9 +39,9 @@ android {
         abortOnError false
     }
 
-    sourceSets{
+    sourceSets {
         main {
-            java{
+            java {
                 srcDir 'src'
             }
 
@@ -64,6 +64,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
 }
 
 dependencies {
@@ -78,5 +82,3 @@ dependencies {
 
 project.buildDir = 'gradleBuild'
 getProject().setBuildDir('gradleBuild')
-
-

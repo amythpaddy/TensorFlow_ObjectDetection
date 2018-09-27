@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/smartivity/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e672857d6996c5ef04abbc2e25c5380c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/smartivity/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c49edccd1434b65cda71142313b16943/AndroidManifest.xml:2:1-11:12
-MERGED from [org.tensorflow:tensorflow-android:1.10.0] /home/smartivity/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.10.0.aar/7657ebbadd141c09b4a16da705e6171b/AndroidManifest.xml:2:1-8:12
+MERGED from [org.tensorflow:tensorflow-android:1.11.0-rc1] /home/smartivity/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.11.0-rc1.aar/f857f28c3c841b56b0656f79d5dfd371/AndroidManifest.xml:2:1-8:12
 MERGED from [com.android.support:support-fragment:27.1.1] /home/smartivity/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0e382f37bfd5412b065ab9c3bf549984/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/smartivity/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7eeeb6a8ddfd0c3b14b75dab2bcc618e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /home/smartivity/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/bd43315e70bda799be54e71074e34e96/AndroidManifest.xml:17:1-22:12
@@ -17,20 +17,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/smartivity/.gradl
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/smartivity/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/1ec79467e125ac5ff30ad2590d0cb579/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/smartivity/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b84560698ff43e7f95caea38e8eb7678/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /home/smartivity/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8aaec99e68aa5dd67c0a7cf6ba4c4965/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:3:5-50
 		INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml
 		INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
 		INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-32:12
 		INJECTED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:11-69
@@ -76,41 +76,55 @@ uses-permission#android.permission.CAMERA
 ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:9:5-65
 	android:name
 		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:9:22-62
-application
-ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:10:5-24:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/smartivity/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c49edccd1434b65cda71142313b16943/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/smartivity/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c49edccd1434b65cda71142313b16943/AndroidManifest.xml:9:5-20
-MERGED from [org.tensorflow:tensorflow-android:1.10.0] /home/smartivity/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.10.0.aar/7657ebbadd141c09b4a16da705e6171b/AndroidManifest.xml:5:5-6:19
-MERGED from [org.tensorflow:tensorflow-android:1.10.0] /home/smartivity/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.10.0.aar/7657ebbadd141c09b4a16da705e6171b/AndroidManifest.xml:5:5-6:19
-	android:supportsRtl
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:15:9-35
-	android:label
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:13:9-41
-	android:roundIcon
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:14:9-54
-	android:icon
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:12:9-43
-	android:allowBackup
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:11:9-35
-	android:theme
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:16:9-40
-activity#com.caragiz_studioz.test.magicodev1.ActivityMain
-ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:17:9-23:20
-	android:name
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:17:19-47
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:18:13-22:29
-action#android.intent.action.MAIN
-ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:19:17-69
-	android:name
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:19:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:21:17-77
-	android:name
-		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:21:27-74
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:11:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:2:1-26:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:12:22-77
+application
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:14:5-30:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/smartivity/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c49edccd1434b65cda71142313b16943/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/smartivity/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c49edccd1434b65cda71142313b16943/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-android:1.11.0-rc1] /home/smartivity/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.11.0-rc1.aar/f857f28c3c841b56b0656f79d5dfd371/AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.11.0-rc1] /home/smartivity/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.11.0-rc1.aar/f857f28c3c841b56b0656f79d5dfd371/AndroidManifest.xml:5:5-6:19
+	android:supportsRtl
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:17:9-41
+	android:roundIcon
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:18:9-54
+	android:icon
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:20:9-40
+activity#com.caragiz_studioz.test.magicodev1.ActivityMain
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:21:9-27:20
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:21:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:25:27-74
+activity#com.caragiz_studioz.test.magicodev1.ActivityShape
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:28:9-60
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:28:19-48
+activity#com.caragiz_studioz.test.magicodev1.AcitivityGameList
+ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:29:9-64
+	android:name
+		ADDED from /home/smartivity/dev/android/workspace/Magico_Dev/app/src/main/AndroidManifest.xml:29:19-52

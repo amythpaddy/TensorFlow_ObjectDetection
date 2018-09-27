@@ -1,5 +1,0 @@
-...
-cross
-hexw
-pent
-squr

@@ -34,11 +34,12 @@ public class ActivityMain extends CameraActivity {
 
     private static final int TF_OF_API_INPUT_SIZE = 300;
 //    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/graph.pb";
-//    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/magico17aug.pb";
-    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/magico_dev.pb";
+    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/magico_inception.pb";
+//    private static final String TF_OD_API_MODEL_FILE = "file:///android_asset/mumbai_demo_test.pb";
 //    private static final String TF_OD_API_LABELS = "file:///android_asset/labels.txt";
 //    private static final String TF_OD_API_LABELS = "file:///android_asset/magico_labels.txt";
-    private static final String TF_OD_API_LABELS = "file:///android_asset/magico_dev_labels.txt";
+    private static final String TF_OD_API_LABELS = "file:///android_asset/magico_inception.txt";
+//    private static final String TF_OD_API_LABELS = "file:///android_asset/magico_dev_labels.txt";
 
     private enum DetectorMode {
         TF_OD_API, MULTIBOX, YOLO;
@@ -46,9 +47,16 @@ public class ActivityMain extends CameraActivity {
 
     private static final DetectorMode MODE = DetectorMode.TF_OD_API;
 
+//    private static final String YOLO_MODEL_FILE = "file:///android_asset/yolov2_tiny.pb";
+    private static final String YOLO_MODEL_FILE = "file:///android_asset/magico_tiny.pb";
+    private static final int YOLO_INPUT_SIZE = 360;
+    private static final String YOLO_INPUT_NAME = "input";
+    private static final String YOLO_OUTPUT_NAMES = "output";
+    private static final int YOLO_BLOCK_SIZE = 32;
+
     private static final float MINIMUM_CONFIDENCE = 0.1f;
     private static final boolean MAINTAIN_ASPECT = MODE == DetectorMode.YOLO;
-    private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
+    private static final Size DESIRED_PREVIEW_SIZE = new Size(1280, 720);
     private static final boolean SAVE_PREVIEW_BITMAP = false;
     private static final float TEXT_SIZE = 10;
 
@@ -266,17 +274,30 @@ public class ActivityMain extends CameraActivity {
         borderedText.setTypeface(Typeface.MONOSPACE);
 
         int cropSize = TF_OF_API_INPUT_SIZE;
-        try {
-            detector = TensorFlowObjectDetectionAPIModel.create(
-                    getAssets(),
-                    TF_OD_API_MODEL_FILE,
-                    TF_OD_API_LABELS,
-                    TF_OF_API_INPUT_SIZE
-            );
-        } catch (IOException e) {
-            e.printStackTrace();
-            Toast.makeText(this, "Classifier cannot be initialized", Toast.LENGTH_SHORT).show();
-            finish();
+        if (MODE == DetectorMode.YOLO) {
+            detector =
+                    TensorFlowYoloDetector.create(
+                            getAssets(),
+                            YOLO_MODEL_FILE,
+                            YOLO_INPUT_SIZE,
+                            YOLO_INPUT_NAME,
+                            YOLO_OUTPUT_NAMES,
+                            YOLO_BLOCK_SIZE);
+            cropSize = YOLO_INPUT_SIZE;
+        }
+        else{
+            try {
+                detector = TensorFlowObjectDetectionAPIModel.create(
+                        getAssets(),
+                        TF_OD_API_MODEL_FILE,
+                        TF_OD_API_LABELS,
+                        TF_OF_API_INPUT_SIZE
+                );
+            } catch (IOException e) {
+                e.printStackTrace();
+                Toast.makeText(this, "Classifier cannot be initialized", Toast.LENGTH_SHORT).show();
+                finish();
+            }
         }
 
         previewHeight = size.getHeight();

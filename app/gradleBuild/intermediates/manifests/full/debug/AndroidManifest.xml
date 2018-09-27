@@ -29,6 +29,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.caragiz_studioz.test.magicodev1.ActivityShape" />
+        <activity android:name="com.caragiz_studioz.test.magicodev1.AcitivityGameList" />
     </application>
 
 </manifest>
